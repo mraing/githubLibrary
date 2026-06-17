@@ -1,0 +1,9 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+data/github_library.db
+data/github_library.db-shm
+data/github_library.db-wal
+.env
+/tmp/
