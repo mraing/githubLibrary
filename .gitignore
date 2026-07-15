@@ -7,3 +7,7 @@ data/github_library.db-shm
 data/github_library.db-wal
 .env
 /tmp/
+frontend/public/data/*.json
+.opencode/
+.claude/
+.codegraph/

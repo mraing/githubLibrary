@@ -28,16 +28,6 @@ CATEGORY_RULES = [
         "languages": ["Go", "Python", "Java", "Rust", "C#", "PHP", "Ruby", "Kotlin", "Scala"]
     },
     {
-        "keywords": ["skill", "mcp", "browser-harness", "browser-use", "claude", "codex",
-                     "cursor", "copilot", "superpower", "codegraph", "playwright-mcp",
-                     "cdp", "chrome-devtools", "agent-skill", "agent-harness",
-                     "browser-agent", "browser-automation"],
-        "topics": ["skill", "mcp", "agent-skills", "ai-agents", "ai-agent", "claude-code",
-                   "browser-automation", "browser-harness", "browser-use", "browser-agent",
-                   "superpower", "codegraph", "cdp", "chrome-devtools", "playwright-mcp"],
-        "languages": []
-    },
-    {
         "name": "AI / 机器学习",
         "keywords": ["machine-learning", "deep-learning", "transformer",
                      "neural", "nlp", "computer-vision", "ml", "artificial-intelligence",

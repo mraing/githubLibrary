@@ -1,18 +1,9 @@
-import { Layout, Button, Typography, message } from "antd";
+import { Layout, Button, Typography } from "antd";
 import { ReloadOutlined } from "@ant-design/icons";
 
 const { Header: AntHeader } = Layout;
 
 export default function Header({ onRefresh, loading }) {
-  const handleRefresh = async () => {
-    try {
-      await onRefresh();
-      message.success("已刷新仓库数据");
-    } catch (e) {
-      message.error("刷新失败：" + e.message);
-    }
-  };
-
   return (
     <AntHeader
       style={{
@@ -45,7 +36,7 @@ export default function Header({ onRefresh, loading }) {
         type="text"
         size="small"
         icon={<ReloadOutlined spin={loading} />}
-        onClick={handleRefresh}
+        onClick={onRefresh}
         loading={loading}
         style={{ color: "#86868b", fontWeight: 500, fontSize: 13 }}
       >

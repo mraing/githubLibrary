@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { Layout, ConfigProvider, theme } from "antd";
+import { Layout, ConfigProvider, theme, message } from "antd";
 import zhCN from "antd/locale/zh_CN";
 import { fetchRepos, fetchRecentRepos, fetchCategories, refreshRepos } from "./services/api";
 import Header from "./components/Header";
@@ -97,6 +97,8 @@ export default function App() {
       setCategory("");
       setSearch("");
       loadData(1, "", "");
+    } catch {
+      message.info("数据由 GitHub Actions 每日自动更新");
     } finally {
       setRefreshing(false);
     }
