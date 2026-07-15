@@ -1,4 +1,4 @@
-const DATA_URL = "/data/all.json";
+const DATA_URL = `${import.meta.env.BASE_URL}data/all.json`;
 
 let _cache = null;
 
